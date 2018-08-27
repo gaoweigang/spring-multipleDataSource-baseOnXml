@@ -9,6 +9,10 @@
     <properties>
         <spring.version>4.3.7.RELEASE</spring.version>
         <mysql.version>5.1.46</mysql.version>
+        <jackson.core.version>1.9.13</jackson.core.version>
+        <jackson.mapper.version>1.9.13</jackson.mapper.version>
+        <jackson-databind.version>2.6.3</jackson-databind.version>
+        <jackson-core.version>2.6.3</jackson-core.version>
     </properties>
 
     <dependencies>
@@ -99,6 +103,49 @@
             <artifactId>javax.servlet-api</artifactId>
             <version>3.1.0</version>
         </dependency>
+
+
+        <!-- jackson start SpringMVC请求返回的数据无法转换，需要添加如下配置-->
+        <dependency>
+            <groupId>org.codehaus.jackson</groupId>
+            <artifactId>jackson-core-asl</artifactId>
+            <version>${jackson.core.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.codehaus.jackson</groupId>
+            <artifactId>jackson-mapper-asl</artifactId>
+            <version>${jackson.mapper.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-core</artifactId>
+            <version>${jackson-core.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>${jackson-databind.version}</version>
+        </dependency>
+        <!-- jackson end -->
+
+        <!--swagger2 它的出现就是为了方便进行测试后台的restful形式的接口-->
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>2.4.0</version>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+            <version>2.4.0</version>
+        </dependency>
+        <!-- swagger-->
+        <!--springfox-swagger2已经依赖的swagger-annotations，因此在这里可以注释掉-->
+        <!--<dependency>
+            <groupId>io.swagger</groupId>
+            <artifactId>swagger-annotations</artifactId>
+            <version>1.5.16</version>
+        </dependency>-->
 
 
         <!--添加数据库连接池druid依赖-->

@@ -131,10 +131,11 @@ public class DataSourceConfig{
 	public DynamicDataSource dynamicDataSource(){
 		DynamicDataSource dynamicDataSource = new DynamicDataSource();
 		Map<Object, Object> dataSourceMap = new HashMap<Object, Object>();
-		dataSourceMap.put(DataSourceType.MASTER.getCode(), dataSourceMaster());
-		dataSourceMap.put(DataSourceType.SLAVE.getCode(), dataSourceSlave());
+		dataSourceMap.put("master", dataSourceMaster());
+		dataSourceMap.put("slave", dataSourceSlave());
 		dynamicDataSource.setTargetDataSources(dataSourceMap);//设置动态切换的数据源
-		dynamicDataSource.setDefaultTargetDataSource(DataSourceType.SLAVE.getCode());//设置默认是从库
+
+		dynamicDataSource.setDefaultTargetDataSource(dataSourceSlave());//设置默认是从库
 		return dynamicDataSource;
 	}
 

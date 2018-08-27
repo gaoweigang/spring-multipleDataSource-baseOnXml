@@ -7,6 +7,9 @@ import org.aspectj.lang.annotation.Pointcut;
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
+/**
+ * 切面
+ */
 @Aspect // for aop
 @Component // for auto scan
 @Order(0) // execute before @Transactional
