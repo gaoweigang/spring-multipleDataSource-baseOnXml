@@ -21,7 +21,7 @@ public class UserServiceTest {
 
 
     @Test
-    public void testAddUserInfo() throws BusinessException {
+    public void testAddUser() throws BusinessException {
 
         UserDto dto = new UserDto();
         dto.setUserId("13817191469");
@@ -34,27 +34,18 @@ public class UserServiceTest {
         dto.setMobile("13817191469");
         dto.setRoleCode("test2");
         dto.setRoleName("测试2");
-        userService.addUserInfo(dto);
+        userService.addUser(dto);
 
     }
 
 
 
     @Test
-    public void testUpdateUserInfo() throws BusinessException{
+    public void testQueryUserInfoById() throws BusinessException{
 
         UserDto dto = new UserDto();
         dto.setUserId("13817191469");
-        dto.setUsername("曾宪洲");
-        dto.setCardNo("420881199101095173");
-        dto.setPassword("weiganggao111");
-        dto.setConfirmPassword("weiganggao");
-        dto.setEmail("13817191469@163.com");
-        dto.setEntryTime(new Date());
-        dto.setMobile("13817191469");
-        dto.setRoleCode("test4");
-        dto.setRoleName("测试4");
 
-        userService.updateUserInfo(dto);
+        userService.queryUserInfoById(dto);
     }
 }

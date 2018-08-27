@@ -1,0 +1,41 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.gwg.shiro:spring-multipleDataSource:jar:0.0.1-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 170, column 21
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building spring-multipleDataSource 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- mybatis-generator-maven-plugin:1.3.2:generate (default-cli) @ spring-multipleDataSource ---
+[INFO] Connecting to the Database
+[INFO] Introspecting table tbl_user
+[INFO] Introspecting table tbl_role
+[INFO] Generating Example class for table tbl_user
+[INFO] Generating Record class for table tbl_user
+[INFO] Generating Mapper Interface for table tbl_user
+[INFO] Generating SQL Map for table tbl_user
+[INFO] Generating Example class for table tbl_role
+[INFO] Generating Record class for table tbl_role
+[INFO] Generating Mapper Interface for table tbl_role
+[INFO] Generating SQL Map for table tbl_role
+[INFO] Saving file UserMapper.xml
+[INFO] Saving file RoleMapper.xml
+[INFO] Saving file UserExample.java
+[INFO] Saving file User.java
+[INFO] Saving file UserMapper.java
+[INFO] Saving file RoleExample.java
+[INFO] Saving file Role.java
+[INFO] Saving file RoleMapper.java
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 0.739 s
+[INFO] Finished at: 2018-08-27T15:21:48+08:00
+[INFO] Final Memory: 12M/155M
+[INFO] ------------------------------------------------------------------------

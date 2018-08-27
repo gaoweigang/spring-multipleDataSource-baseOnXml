@@ -8,11 +8,13 @@
         <outputRelativeToContentRoot value="true" />
         <module name="shiro-web-session-sharing-spring" />
         <module name="shiro-web-session-sharing-spring-two" />
+        <module name="spring-multipleDataSource" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
       <module name="shiro-web-session-sharing-spring" target="1.5" />
       <module name="shiro-web-session-sharing-spring-two" target="1.5" />
+      <module name="spring-multipleDataSource" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
