@@ -23,6 +23,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
  * 这个配置需要与@EnableWebMvc一起,需要在SpringMVC容器中，否则会报错
  */
 @Configuration
+@EnableSwagger2 //启用Swagger2
 public class Swagger2Config {
 
 
