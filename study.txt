@@ -16,7 +16,5 @@ IDEA终端无法使用mvn命令
 Springmvc集成Swagger2
 https://blog.csdn.net/weixin_38501485/article/details/80704761
 https://blog.csdn.net/u010827436/article/details/45872981
-问题：
-https://www.cnblogs.com/driftsky/p/4952918.html
 
 

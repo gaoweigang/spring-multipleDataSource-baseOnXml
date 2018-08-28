@@ -1,1 +1,1 @@
-mvn mybatis-generator:generate > result.txt
+mvn mybatis-generator:generate

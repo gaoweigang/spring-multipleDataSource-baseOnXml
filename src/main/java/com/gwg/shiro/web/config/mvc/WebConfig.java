@@ -31,7 +31,9 @@ import java.util.List;
  * 不需要再配置web.xml文件了
  * 2.在这里为什么实现WebMvcConfigurer？
  * 想要以Java形式定制默认的配置，你可以简单的实现WebMvcConfigurer接口，根据需要配置，或者继承WebMvcConfigurerAdapter并重写需要的方法：
-
+ *
+ * 二.SpringMvc与Swagger2集成
+ * SpringMVC与swagger2集成，swagger2的配置需要在SpringMVC容器中，否则找不到服务
  */
 @Configuration
 @EnableWebMvc // 启用SpringMVC
@@ -39,10 +41,10 @@ import java.util.List;
 @EnableSwagger2 //启用Swagger2
 public class WebConfig extends WebMvcConfigurerAdapter {
 
-    @Bean
+   /* @Bean
     public RequestMappingHandlerAdapter annotationMethodHandlerAdapter(){
         return new RequestMappingHandlerAdapter();
-    }
+    }*/
 
     /**
      * Java形式注册拦截器：
@@ -80,7 +82,6 @@ public class WebConfig extends WebMvcConfigurerAdapter {
     }
 
     @Bean
-
     public Docket customImplementation() {
         return new Docket(DocumentationType.SWAGGER_2)//
                 .select()//
@@ -93,7 +94,6 @@ public class WebConfig extends WebMvcConfigurerAdapter {
 
 
     private ApiInfo apiInfo() {
-
         return new ApiInfoBuilder()//
                 .title("shiro 系统 API")//
                 .description("")//描述

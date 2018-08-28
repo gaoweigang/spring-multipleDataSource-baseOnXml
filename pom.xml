@@ -76,7 +76,7 @@
         <dependency>
             <groupId>org.mybatis</groupId>
             <artifactId>mybatis-spring</artifactId>
-            <version>1.2.5</version>
+            <version>1.3.1</version>
         </dependency>
         <dependency>
             <groupId>org.mybatis</groupId>
@@ -105,7 +105,7 @@
         </dependency>
 
 
-        <!-- jackson start SpringMVC请求返回的数据无法转换，需要添加如下配置-->
+        <!-- jackson start SpringMVC使用的反序列化工具，否则SpringMVC请求返回的数据无法转换，需要添加如下配置-->
         <dependency>
             <groupId>org.codehaus.jackson</groupId>
             <artifactId>jackson-core-asl</artifactId>

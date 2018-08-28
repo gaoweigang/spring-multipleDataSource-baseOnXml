@@ -27,13 +27,9 @@ public class UserServiceTest {
         dto.setUserId("13817191469");
         dto.setUsername("高伟刚");
         dto.setCardNo("420881199101095174");
-        dto.setPassword("weiganggao");
-        dto.setConfirmPassword("weiganggao");
         dto.setEmail("13817191469@163.com");
         dto.setEntryTime(new Date());
         dto.setMobile("13817191469");
-        dto.setRoleCode("test2");
-        dto.setRoleName("测试2");
         userService.addUser(dto);
 
     }
