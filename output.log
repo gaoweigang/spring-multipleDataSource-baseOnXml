@@ -78,3 +78,10 @@
 [INFO] 2018-08-27 18:06:27.576 [main] [DataSourceConfig]116 - dataSourceSlaver driverClassName:com.mysql.jdbc.Driver, dburl:jdbc:mysql://127.0.0.1:3306/zkmkt?useUnicode=true&characterEncoding=gbk&autoReconnect=true&allowMultiQueries=true, username:root, password:123456
 [INFO] 2018-08-27 18:12:35.443 [main] [DataSourceConfig]90 - dataSourceMaster driverClassName:com.mysql.jdbc.Driver, dburl:jdbc:mysql://127.0.0.1:3306/zkmkt?useUnicode=true&characterEncoding=gbk&autoReconnect=true&allowMultiQueries=true, username:root, password:123456
 [INFO] 2018-08-27 18:12:35.552 [main] [DataSourceConfig]116 - dataSourceSlaver driverClassName:com.mysql.jdbc.Driver, dburl:jdbc:mysql://127.0.0.1:3306/zkmkt?useUnicode=true&characterEncoding=gbk&autoReconnect=true&allowMultiQueries=true, username:root, password:123456
+[INFO] 2018-08-28 16:15:14.856 [main] [com.alibaba.druid.pool.DruidDataSource]638 - {dataSource-1} inited 
+[INFO] 2018-08-28 16:15:14.935 [main] [com.alibaba.druid.pool.DruidDataSource]638 - {dataSource-2} inited 
+[INFO] 2018-08-28 16:15:15.460 [main] [com.gwg.shiro.web.config.jdbc.MultipleDataSourceAspectAdvice]47 - execute beforeinv start ........... 
+[INFO] 2018-08-28 16:15:15.460 [main] [com.gwg.shiro.web.config.jdbc.MultipleDataSourceAspectAdvice]50 - mapper里各个方法的参数：com.gwg.shiro.web.model.User@51e8e6e6 
+[INFO] 2018-08-28 16:18:34.273 [main] [com.alibaba.druid.pool.DruidDataSource]638 - {dataSource-1} inited 
+[INFO] 2018-08-28 16:18:34.357 [main] [com.alibaba.druid.pool.DruidDataSource]638 - {dataSource-2} inited 
+[INFO] 2018-08-28 16:18:34.825 [main] [com.gwg.shiro.web.config.jdbc.MultipleDataSourceAspectAdvice]64 - beforeRead，mapper里各个方法的参数：com.gwg.shiro.web.model.UserExample@56f6d40b 

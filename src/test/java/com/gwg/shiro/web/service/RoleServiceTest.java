@@ -4,22 +4,30 @@ import com.alibaba.fastjson.JSON;
 import com.gwg.shiro.web.dto.RoleDto;
 import com.gwg.shiro.web.exception.BusinessException;
 import com.gwg.shiro.web.model.Role;
+import org.junit.Before;
 import org.junit.Test;
-import org.junit.runner.RunWith;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.test.context.ContextConfiguration;
-import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-@RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration("/spring-config.xml")
+
 public class RoleServiceTest {
 
     private static final Logger logger = LoggerFactory.getLogger(RoleServiceTest.class);
 
-    @Autowired
     private RoleService roleService;
+
+    /**
+     * 每个测试方法执行之前执行一次
+     */
+    @Before
+    public void before(){
+        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("spring-config.xml");
+        roleService = applicationContext.getBean(RoleService.class);
+    }
+
 
     @Test
     public void testAddRole() throws BusinessException {
